@@ -1,0 +1,196 @@
+section {
+  min-height: 70vmax;
+}
+
+section#main {
+  height: 100vmax;
+}
+
+section#contact {
+  min-height: 60vmax;
+}
+
+section#goals p {
+  margin-bottom: 0;
+}
+
+div#title {
+  float: initial;
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+}
+
+div#title h1 {
+  font-size: 8vmax;
+  width: auto;
+}
+
+div#title h2 {
+  font-size: 4.4vmax;
+  font-style: italic;
+}
+
+div#title h1, div#title h2 {
+  margin-top: 5vmin;
+  text-align: left;
+  padding-left: 10vw;
+}
+
+div#marble {
+  position: relative;
+  float: initial;
+  height: 50vh;
+  width: auto;
+}
+
+div#marble img {
+  height: auto;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 5vmax;
+  width: 100vw;
+}
+
+p, ul, dl {
+  font-size: 2.25vmax;
+}
+
+h3 {
+  font-size: 3.35vmax;
+}
+
+p {
+  width: 85vmin;
+  margin: 0 auto;
+  margin-bottom: 10vmax;
+}
+
+h1, p {
+  padding-top: 8vmin;
+}
+
+img.blob#r02 {
+  left: -10vmin;
+  top: 5vmin;
+}
+
+ul {
+  font-family: "Lack";
+  /*
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; */
+}
+
+ul li {
+  display: block;
+}
+
+ul li:nth-of-type(2n) {
+  font-family: "Lack";
+}
+
+div.works {
+  display: grid;
+  width: 100vw;
+  padding: 0;
+  margin-top: 5vmax;
+  margin-bottom: 5vmax;
+  padding-bottom: 8vmax;
+  padding-top: 8vmax;
+  background: url(svg/work02.svg) no-repeat center;
+  background-size: cover;
+}
+
+div.works img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+div.works p {
+  font-size: 2.15vmax;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  padding-top: 0;
+  width: inherit;
+}
+
+div.works:nth-of-type(even) {
+  left: initial;
+  right: 0;
+  background-image: url(svg/work01.svg);
+}
+
+div.works:nth-of-type(even) img {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 auto;
+}
+
+div.works:nth-of-type(even) .workDesc {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0 auto;
+}
+
+div.workDesc {
+  grid-column: 1;
+  grid-row: 2;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+div.workDesc h3, div.workDesc p {
+  color: #E4494A;
+}
+
+ul {
+  padding: 5vw;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li:nth-of-type(2n) {
+  font-family: "Lack";
+}
+
+dl {
+  font-size: 2vmax;
+}
+
+dl dt {
+  display: block;
+  width: auto;
+  float: none;
+  text-align: center;
+}
+
+dl dd {
+  display: block;
+  width: auto;
+  float: none;
+  text-align: center;
+  font-feature-settings: "ss01" 1;
+  margin-bottom: 3vmax;
+}
+
+button {
+  font-size: 2.25vmax;
+  padding: 0.65vmax;
+  border: 0.3vmax;
+  border-radius: 2.25vmax;
+  margin: 0.2vmax;
+}
+
+nav {
+  display: none;
+}

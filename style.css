@@ -1,0 +1,399 @@
+@keyframes main {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-75deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1F1F1F;
+  color: #E4494A;
+  text-align: center;
+  overflow-x: hidden;
+  width: 100vw;
+  font-feature-settings: "liga" 0;
+}
+
+h1, h3, ul {
+  font-family: "Lack Line";
+}
+
+h2, p, dl {
+  font-family: "Lack";
+}
+
+h1 {
+  font-size: 5vmax;
+  width: 50vw;
+}
+
+p, ul, dl {
+  font-size: 3vmax;
+}
+
+h3 {
+  font-size: 3.35vmax;
+}
+
+p {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+h1, p {
+  padding-top: 10vh;
+}
+
+section {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+section:nth-of-type(odd) {
+  background-color: #E4494A;
+  color: #1F1F1F;
+}
+
+section:first-child {
+  background-color: #1F1F1F;
+  color: #E4494A;
+}
+
+section#goals::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7.35vw;
+  height: 7.55vw;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
+  background-image: url("svg/up01.svg");
+}
+
+section#tech::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -19.35vw;
+  height: 19.55vw;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
+  background-image: url("svg/up02.svg");
+}
+
+section#projects::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7.55vw;
+  height: 7.75vw;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
+  background-image: url("svg/up03.svg");
+  height: 14.44vw;
+}
+
+section#contact::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7.35vw;
+  height: 7.55vw;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
+  background-image: url("svg/up01.svg");
+  transform: rotate(180deg);
+  top: -0.20vw;
+}
+
+section#contact {
+  padding-top: 10vh;
+  min-height: 90vh;
+  overflow: hidden;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+section#contact::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7.35vw;
+  height: 7.55vw;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
+  background-image: url("svg/up01.svg");
+  top: initial;
+  bottom: -0.20vw;
+}
+
+section#projects {
+  padding-bottom: 10vh;
+}
+
+div#title {
+  width: 50vw;
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+
+div#title h1 {
+  font-size: 8vmax;
+  width: auto;
+}
+
+div#title h2 {
+  font-size: 4.4vmax;
+  font-style: italic;
+}
+
+div#title h1, div#title h2 {
+  margin-top: 13vmin;
+  text-align: left;
+  padding-left: 10vw;
+}
+
+div#marble {
+  float: left;
+  width: 50vw;
+  overflow: hidden;
+  z-index: 10;
+  position: absolute;
+}
+
+div#marble img {
+  height: 100vh;
+}
+
+div.works {
+  display: grid;
+  width: 90vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding: 5vw;
+  padding-bottom: 8vw;
+  padding-top: 8vw;
+  background: url(svg/work02.svg) no-repeat center;
+  background-size: 90% 120%;
+}
+
+div.works img {
+  grid-column: 1;
+  width: 50vw;
+  margin-left: 4vw;
+}
+
+div.works p {
+  font-size: 2.15vmax;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  padding-top: 0;
+  width: inherit;
+}
+
+div.works:nth-of-type(even) {
+  left: initial;
+  right: 0;
+  background-image: url(svg/work01.svg);
+}
+
+div.works:nth-of-type(even) img {
+  grid-column: 2;
+  margin-left: initial;
+}
+
+div.works:nth-of-type(even) .workDesc {
+  grid-column: 1;
+  margin-left: 2vw;
+}
+
+div.workDesc {
+  grid-column: 2;
+  width: 30vw;
+}
+
+div.workDesc h3, div.workDesc p {
+  color: #E4494A;
+}
+
+#tech ul {
+  padding: 5vw;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+#tech ul li {
+  display: inline;
+}
+
+#tech ul li:nth-of-type(2n) {
+  font-family: "Lack";
+}
+
+dl {
+  padding: 5vw;
+  width: 85vw;
+}
+
+dl dt {
+  display: block;
+  width: 30%;
+  float: left;
+  text-align: right;
+}
+
+dl dd {
+  display: block;
+  font-style: italic;
+  width: 70%;
+  float: right;
+  text-align: left;
+  font-feature-settings: "ss01" 1;
+}
+
+img.blob {
+  position: absolute;
+  z-index: 100;
+}
+
+img.blob#central {
+  height: 80vh;
+  width: auto;
+  z-index: 1;
+  top: 10vh;
+  left: 30vw;
+  margin: 0 auto;
+  animation: main 5s infinite;
+}
+
+img.blob#r01 {
+  right: -15vmin;
+  top: -15vmin;
+  height: 35vmin;
+  width: auto;
+}
+
+img.blob#r02 {
+  left: -10vmin;
+  top: 25vmin;
+  height: 25vmin;
+  width: auto;
+}
+
+img.blob#r03 {
+  right: -5vmin;
+  bottom: 20vmin;
+  height: 25vmin;
+  width: auto;
+}
+
+img.blob#floating {
+  position: relative;
+  right: -5vmin;
+  bottom: 0;
+  height: 20vmin;
+  width: auto;
+}
+
+img.blob#last {
+  height: 100vh;
+  width: auto;
+  z-index: -1;
+  left: -40vmin;
+  bottom: -10vmin;
+  margin: 0 auto;
+  transform: rotate(270deg);
+}
+
+img.blob#w01 {
+  left: -10vmin;
+  top: -10vmin;
+  height: 35vmin;
+  width: auto;
+}
+
+button {
+  font-family: "Lack";
+  background-color: #E4494A;
+  color: #1F1F1F;
+  font-size: 1.5vw;
+  padding: 0.45vw;
+  border: 0.3vw solid #E4494A;
+  border-radius: 1.5vw;
+}
+
+button:hover {
+  color: #E4494A;
+  background-color: #1F1F1F;
+}
+
+footer {
+  background-color: #E4494A;
+  color: #1F1F1F;
+  font-family: "Lack";
+  font-feature-settings: "ss01" 1;
+  font-size: 1.5vmax;
+}
+
+footer::first-letter {
+  font-feature-settings: "ss02" 1;
+}
+
+nav {
+  position: fixed;
+  top: 2vh;
+  right: -26vw;
+  min-width: 26vw;
+  text-align: right;
+  z-index: 200;
+  mix-blend-mode: difference;
+}
+
+nav li {
+  font-family: "Lack";
+  position: relative;
+  right: 0vw;
+  padding-right: 0vw;
+  margin-left: 0;
+  padding-left: 1vw;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+nav li:hover, nav li:focus {
+  text-align: right;
+  right: 26vw;
+  padding-right: 2vw;
+  list-style: none;
+}
+
+:link, :visited {
+  text-decoration: none;
+  color: inherit;
+}

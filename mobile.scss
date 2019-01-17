@@ -156,6 +156,7 @@ div.workDesc{
 
   dl{
       font-size: 2vmax;
+      width: auto;
       dt{
         display: block;
         width: auto;
@@ -172,7 +173,7 @@ div.workDesc{
       }
   }
 
-  button{
+  a.link{
     font-size: 2.25vmax;
     padding: 0.65vmax;
     border: 0.3vmax;

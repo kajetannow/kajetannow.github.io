@@ -338,7 +338,7 @@ img.blob#w01 {
   width: auto;
 }
 
-button {
+a.link {
   font-family: "Lack";
   background-color: #E4494A;
   color: #1F1F1F;
@@ -348,7 +348,7 @@ button {
   border-radius: 1.5vw;
 }
 
-button:hover {
+a.link:hover {
   color: #E4494A;
   background-color: #1F1F1F;
 }

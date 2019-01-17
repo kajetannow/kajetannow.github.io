@@ -19,7 +19,4 @@ if(o == 'landscape-primary' || o== 'landscape-secondary' || o == '90' || o == '2
     }
     console.log(nav);
     body.appendChild(nav)
-
-}else{
-    body.removeChild('nav')
 }

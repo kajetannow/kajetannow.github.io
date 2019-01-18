@@ -54,7 +54,7 @@ div#marble{
     width: 100vw;
 }
 p, ul, dl{
-    font-size: 2.25vmax;
+    font-size: 2.75vmax;
 }
 h3{
     font-size: 3.35vmax;
@@ -77,10 +77,6 @@ img.blob{
 
 ul{
     font-family: $full;
-    /*
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2; */
       li{
         display: block;
 
@@ -155,8 +151,9 @@ div.workDesc{
   }
 
   dl{
-      font-size: 2vmax;
       width: auto;
+      padding-left: 0;
+      padding-right: 0;
       dt{
         display: block;
         width: auto;

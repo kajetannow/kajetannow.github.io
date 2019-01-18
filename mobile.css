@@ -55,7 +55,7 @@ h1 {
 }
 
 p, ul, dl {
-  font-size: 2.25vmax;
+  font-size: 2.75vmax;
 }
 
 h3 {
@@ -79,10 +79,6 @@ img.blob#r02 {
 
 ul {
   font-family: "Lack";
-  /*
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2; */
 }
 
 ul li {
@@ -164,8 +160,9 @@ ul li:nth-of-type(2n) {
 }
 
 dl {
-  font-size: 2vmax;
   width: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 dl dt {

@@ -4,8 +4,7 @@ var nav = document.createElement('nav');
 var ul = document.createElement('ul');
 if(o == 'landscape-primary' || o== 'landscape-secondary' || o == '90' || o == '270'){
     nav.appendChild(ul);
-    var sections = document.querySelectorAll('section')
-    console.log(sections);
+    var sections = document.querySelectorAll('section');
 
     for(var i = 0; i < sections.length; i++){
         var li = document.createElement('li');
@@ -17,6 +16,5 @@ if(o == 'landscape-primary' || o== 'landscape-secondary' || o == '90' || o == '2
         li.appendChild(a);
         ul.appendChild(li);
     }
-    console.log(nav);
     body.appendChild(nav)
 }

@@ -312,26 +312,31 @@ nav{
       position: fixed;
       top: 2vh;
       right: -26vw;
-      min-width: 26vw;
+      min-width: 28.5vw;
       text-align: right;
       z-index: 200;
       mix-blend-mode: difference;
+      
       li{
+        list-style: none;
+        background: $red;
         font-family: $full;
         position: relative;
         right: 0vw;
         padding-right: 0vw;
         margin-left: 0;
+        margin-bottom: 0.75vw;
         padding-left: 1vw;
         transition-duration: 1s;
         -webkit-transition-duration: 1s;
+        border-radius: 2vw;
       }
       li:hover, li:focus{
           text-align: right;
           right: 26vw;
         padding-right: 2vw;
-        list-style: none;
-          
+        background: none;
+        
       }
 
 }

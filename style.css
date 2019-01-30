@@ -152,7 +152,7 @@ section#contact::after {
   bottom: -0.20vw;
 }
 
-section#projects {
+section#projects, section#goals {
   padding-bottom: 10vh;
 }
 

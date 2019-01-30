@@ -2,6 +2,7 @@
 Hi, I'm Kajetan and this is my GitHub Page. I'm going to use it to show my projects.
 
 ##List of changes:
+- 1.4.1 - remove typo, improved css
 - 1.4 - fixed menu, changed its design
 - 1.3 - changed descriptions, delete developmental JS files, improved mobile.css, scrset on rest of images
 - 1.2 - improved tabulations in index.html and fixing minor issues
